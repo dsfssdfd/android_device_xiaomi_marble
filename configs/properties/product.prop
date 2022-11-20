@@ -22,6 +22,10 @@ bluetooth.profile.sap.server.enabled?=false
 ro.sf.blurs_are_expensive=1
 ro.surface_flinger.supports_background_blur=1
 
+# Camera
+ro.hardware.camera=xiaomi
+ro.com.google.lens.oem_camera_package=com.android.camera
+
 # Radio
 persist.vendor.radio.hidl_dev_service=true
 

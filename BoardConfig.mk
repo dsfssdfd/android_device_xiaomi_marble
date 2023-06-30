@@ -6,6 +6,7 @@
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/marble/BoardConfigVendor.mk
+-include vendor/xiaomi/marble-miuicamera/products/board.mk
 
 # A/B
 AB_OTA_UPDATER := true

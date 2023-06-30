@@ -22,6 +22,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Project ID Quota.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Call the MiuiCamera setup
+$(call inherit-product-if-exists, vendor/xiaomi/marble-miuicamera/products/miuicamera.mk)
+TARGET_INCLUDES_MIUI_CAMERA := true
+
 DEVICE_PATH := device/xiaomi/marble
 
 # SHIPPING API
@@ -60,10 +64,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
-
-# Camera
-PRODUCT_PACKAGES += \
-    GCamGOPrebuilt-V4
 
 # Dtb
 PRODUCT_COPY_FILES += \
